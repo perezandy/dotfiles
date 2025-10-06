@@ -1,0 +1,648 @@
+[Timings]: 0.000001 (0.000000): Started
+[Timings]: 0.000042 (0.000042): ../source/rofi.c:main:957 
+[default]: Parsing string: 'configuration {
+
+    // Timeout from user input.
+    timeout {
+        // The delay after inactivity to execute action.
+        delay: 0;
+        // The action to execute once the delay expires.
+        action: "kb-cancel";
+    }
+
+    // File browser mode.
+    filebrowser {
+        sorting-method:    "name";
+        directories-first: true;
+    }
+}
+
+@theme "default"
+'
+[Timings]: 0.000342 (0.000300): ../source/rofi.c:main:1008 
+[Timings]: 0.000374 (0.000032): ../source/rofi.c:main:1015 Setup Locale
+[Rofi]: Parse plugin path: /usr/lib64/rofi
+[Rofi]: Looking into: /usr/lib64/rofi for plugins
+[Timings]: 0.000393 (0.000019): ../source/rofi.c:main:1017 Collect MODES
+[Timings]: 0.000424 (0.000031): ../source/rofi.c:main:1019 Setup MODES
+[Timings]: 0.000431 (0.000007): ../source/rofi.c:main:1023 Setup mainloop
+[Timings]: 0.000490 (0.000059): ../source/rofi.c:main:1026 NK Bindings
+[Timings]: 0.000764 (0.000274): ../source/xcb.c:display_setup:1709 Open Display
+[X11Helper]: Query RANDR for monitor layout.
+[X11Helper]: Randr XCB api version: 1.6.
+[X11Helper]: Found randr version: 1.5
+[X11Helper]: Found window manager: |i3|
+[Timings]: 0.001144 (0.000380): ../source/xcb.c:display_setup:1725 Setup XCB
+[Timings]: 0.003204 (0.002060): ../source/rofi.c:main:1033 Setup Display
+[Timings]: 0.003215 (0.000011): ../source/rofi.c:main:1037 Setup abe
+[Rofi]: Look for default config file: /etc/xdg/rofi.rasi
+[Rofi]: Look for default config file: /etc/rofi.rasi
+[Helper]: Opening theme, testing: /home/andy/.config/rofi/config.rasi
+
+[Helper]: Opening theme, path is absolute: /home/andy/.config/rofi/config.rasi
+[Helper]: Opening theme, path is absolute: /home/andy/.config/rofi/config.rasi
+[Helper]: Opening theme, path is absolute but does not exists: /home/andy/.config/rofi/config.rasi
+[Helper]: Opening theme, testing: /home/andy/.config/rofi/themes/home/andy/.config/rofi/config.rasi
+[Helper]: Opening theme, testing: /home/andy/.config/rofi/home/andy/.config/rofi/config.rasi
+[Helper]: Opening theme, testing: /home/andy/.local/share/rofi/themes/home/andy/.config/rofi/config.rasi
+[Helper]: Opening theme directory: /home/andy/.local/share/flatpak/exports/share
+[Helper]: Opening theme, testing: /home/andy/.local/share/flatpak/exports/share/rofi/themes/home/andy/.config/rofi/config.rasi
+[Helper]: Opening theme directory: /var/lib/flatpak/exports/share
+[Helper]: Opening theme, testing: /var/lib/flatpak/exports/share/rofi/themes/home/andy/.config/rofi/config.rasi
+[Helper]: Opening theme directory: /usr/local/share/
+[Helper]: Opening theme, testing: /usr/local/share/rofi/themes/home/andy/.config/rofi/config.rasi
+[Helper]: Opening theme directory: /usr/share/
+[Helper]: Opening theme, testing: /usr/share/rofi/themes/home/andy/.config/rofi/config.rasi
+[Helper]: Opening theme, testing: /usr/share/rofi/themes/home/andy/.config/rofi/config.rasi
+[GLib-GIO]: _g_io_module_get_default: Found default implementation gvfs (GDaemonVfs) for ‘gio-vfs’
+[Timings]: 0.006034 (0.002819): ../source/rofi.c:main:1087 Parse theme
+[Helper]: Opening theme, testing: ../applets/type-1/style-1.rasi
+
+[Helper]: Opening theme, testing: /home/andy/.config/rofi/themes/../applets/type-1/style-1.rasi
+[Helper]: Opening theme, testing: /home/andy/.config/rofi/../applets/type-1/style-1.rasi
+[Helper]: Opening theme, testing: /home/andy/.local/share/rofi/themes/../applets/type-1/style-1.rasi
+[Helper]: Opening theme directory: /home/andy/.local/share/flatpak/exports/share
+[Helper]: Opening theme, testing: /home/andy/.local/share/flatpak/exports/share/rofi/themes/../applets/type-1/style-1.rasi
+[Helper]: Opening theme directory: /var/lib/flatpak/exports/share
+[Helper]: Opening theme, testing: /var/lib/flatpak/exports/share/rofi/themes/../applets/type-1/style-1.rasi
+[Helper]: Opening theme directory: /usr/local/share/
+[Helper]: Opening theme, testing: /usr/local/share/rofi/themes/../applets/type-1/style-1.rasi
+[Helper]: Opening theme directory: /usr/share/
+[Helper]: Opening theme, testing: /usr/share/rofi/themes/../applets/type-1/style-1.rasi
+[Helper]: Opening theme, testing: /usr/share/rofi/themes/../applets/type-1/style-1.rasi
+[default]: Parsing top file: '/home/andy/.config/rofi/applets/type-1/style-1.rasi'
+[Helper]: Opening theme, testing: ../shared/colors.rasi
+
+[Helper]: Opening theme, check in dir where file is included: /home/andy/.config/rofi/applets/type-1/../shared/colors.rasi
+[Helper]: Opening theme, testing: /home/andy/.config/rofi/colors/dracula.rasi
+
+[Helper]: Opening theme, path is absolute: /home/andy/.config/rofi/colors/dracula.rasi
+[Helper]: Opening theme, testing: ../shared/fonts.rasi
+
+[Helper]: Opening theme, check in dir where file is included: /home/andy/.config/rofi/applets/type-1/../shared/fonts.rasi
+[Timings]: 0.006308 (0.000274): ../source/rofi.c:main:1095 Parsed theme
+[XrmOptions]: str: "configuration { log: rofi.log;}"
+
+[default]: Parsing string: 'configuration { log: rofi.log;}'
+[Parser]: Failed to parse theme:
+<big><b>Error while parsing theme:</b></big> <i>configuration { log: rofi.log;}</i>
+	Parser error: <span size="smaller" style="italic">syntax error, unexpected invalid property value</span>
+	Location:     line 1 column 21 to line 1 column 33
+
+[XrmOptions]: str: "configuration { log: "rofi.log";}"
+
+[default]: Parsing string: 'configuration { log: "rofi.log";}'
+[XrmOptions]: Option: log is not found.
+[XrmOptions]: Adding option: log to backup list.
+[Timings]: 0.006349 (0.000041): ../source/rofi.c:main:1108 Load cmd config 
+[Timings]: 0.006416 (0.000067): ../source/view.c:rofi_view_workers_initialize:2810 Setup Threadpool, start
+[Timings]: 0.006437 (0.000021): ../source/view.c:rofi_view_workers_initialize:2836 Setup Threadpool, done
+[Timings]: 0.006438 (0.000001): ../source/rofi.c:main:1198 Workers initialize
+[Helpers.IconFetcher]: Add image extension: png
+[Helpers.IconFetcher]: Add image extension: jpeg
+[Helpers.IconFetcher]: Add image extension: jpe
+[Helpers.IconFetcher]: Add image extension: jpg
+[Helpers.IconFetcher]: Add image extension: wmf
+[Helpers.IconFetcher]: Add image extension: apm
+[Helpers.IconFetcher]: Add image extension: avif
+[Helpers.IconFetcher]: Add image extension: gif
+[Helpers.IconFetcher]: Add image extension: jxl
+[Helpers.IconFetcher]: Add image extension: tiff
+[Helpers.IconFetcher]: Add image extension: tif
+[Helpers.IconFetcher]: Add image extension: webp
+[Helpers.IconFetcher]: Add image extension: svg
+[Helpers.IconFetcher]: Add image extension: svgz
+[Helpers.IconFetcher]: Add image extension: svg.gz
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/avif.thumbnailer for mimetype image/avif
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gnome-epub-thumbnailer.thumbnailer for mimetype application/epub+zip
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gnome-font-viewer.thumbnailer for mimetype application/x-font-ttf
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gnome-font-viewer.thumbnailer for mimetype application/x-font-pcf
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gnome-font-viewer.thumbnailer for mimetype application/x-font-type1
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gnome-font-viewer.thumbnailer for mimetype application/x-font-otf
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gnome-font-viewer.thumbnailer for mimetype font/ttf
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gnome-font-viewer.thumbnailer for mimetype font/otf
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gnome-font-viewer.thumbnailer for mimetype font/woff
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gnome-font-viewer.thumbnailer for mimetype font/collection
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gnome-mobi-thumbnailer.thumbnailer for mimetype application/x-mobipocket-ebook
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gnome-mobi-thumbnailer.thumbnailer for mimetype application/vnd.amazon.mobi8-ebook
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/msword
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.ms-excel
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.ms-powerpoint
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.oasis.opendocument.chart
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.oasis.opendocument.formula
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.oasis.opendocument.graphics
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.oasis.opendocument.graphics-template
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.oasis.opendocument.image
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.oasis.opendocument.presentation
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.oasis.opendocument.presentation-template
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.oasis.opendocument.spreadsheet
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.oasis.opendocument.spreadsheet-template
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.oasis.opendocument.text
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.oasis.opendocument.text-master
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.oasis.opendocument.text-template
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.openxmlformats-officedocument.presentationml.presentation
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.openxmlformats-officedocument.wordprocessingml.document
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.sun.xml.calc
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.sun.xml.calc.template
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.sun.xml.draw
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.sun.xml.draw.template
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.sun.xml.impress
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.sun.xml.impress.template
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.sun.xml.math
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.sun.xml.writer
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.sun.xml.writer.global
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gsf-office.thumbnailer for mimetype application/vnd.sun.xml.writer.template
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/webp-pixbuf.thumbnailer for mimetype image/webp
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gdk-pixbuf-thumbnailer.thumbnailer for mimetype image/png
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gdk-pixbuf-thumbnailer.thumbnailer for mimetype image/jpeg
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gdk-pixbuf-thumbnailer.thumbnailer for mimetype image/gif
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/gdk-pixbuf-thumbnailer.thumbnailer for mimetype image/tiff
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype application/mxf
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype application/ram
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype application/sdp
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype application/vnd.ms-asf
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype application/vnd.ms-wpl
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype application/vnd.rn-realmedia
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype application/vnd.rn-realmedia-vbr
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype application/x-extension-m4a
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype application/x-extension-mp4
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype application/x-flash-video
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype application/x-matroska
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype application/x-netshow-channel
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype application/x-quicktimeplayer
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype application/x-shorten
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype image/vnd.rn-realpix
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype image/x-pict
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype misc/ultravox
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype text/x-google-video-pointer
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/3gp
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/3gpp
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/3gpp2
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/dv
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/divx
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/fli
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/flv
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/mp2t
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/mp4
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/mp4v-es
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/mpeg
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/mpeg-system
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/msvideo
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/ogg
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/quicktime
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/vivo
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/vnd.avi
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/vnd.divx
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/vnd.rn-realvideo
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/vnd.vivo
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/webm
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-anim
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-avi
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-flc
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-fli
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-flic
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-flv
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-m4v
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-matroska
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-mjpeg
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-mpeg
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-mpeg2
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-ms-asf
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-ms-asf-plugin
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-ms-asx
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-msvideo
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-ms-wm
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-ms-wmv
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-ms-wmx
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-ms-wvx
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-nsv
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-ogm+ogg
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-theora
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-theora+ogg
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype video/x-totem-stream
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-pn-realaudio
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/3gpp
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/3gpp2
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/aac
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/ac3
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/AMR
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/AMR-WB
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/basic
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/dv
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/eac3
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/flac
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/m4a
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/midi
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/mp1
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/mp2
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/mp3
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/mp4
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/mpeg
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/mpg
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/ogg
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/opus
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/prs.sid
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/scpls
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/vnd.rn-realaudio
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/wav
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/webm
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-aac
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-aiff
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-ape
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-flac
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-gsm
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-it
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-m4a
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-m4b
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-matroska
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-mod
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-mp1
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-mp2
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-mp3
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-mpg
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-mpeg
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-ms-asf
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-ms-asx
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-ms-wax
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-ms-wma
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-musepack
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-opus+ogg
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-pn-aiff
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-pn-au
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-pn-wav
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-pn-windows-acm
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-realaudio
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-real-audio
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-s3m
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-sbc
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-shorten
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-speex
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-stm
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-tta
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-wav
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-wavpack
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-vorbis
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-vorbis+ogg
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype audio/x-xm
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/totem.thumbnailer for mimetype application/x-flac
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/vnd.comicbook-rar
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/vnd.comicbook+zip
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-cb7
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-cbr
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-cbt
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-cbz
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-ext-cb7
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-ext-cbr
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-ext-cbt
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-ext-cbz
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-ext-djv
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-ext-djvu
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype image/vnd.djvu
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-bzdvi
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-dvi
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-ext-dvi
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-gzdvi
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/pdf
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-bzpdf
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-ext-pdf
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-gzpdf
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-xzpdf
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/postscript
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-bzpostscript
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-gzpostscript
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-ext-eps
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/x-ext-ps
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype image/x-bzeps
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype image/x-eps
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype image/x-gzeps
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/oxps
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/vnd.ms-xpsdocument
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/evince.thumbnailer for mimetype application/illustrator
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/librsvg.thumbnailer for mimetype image/svg+xml
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/librsvg.thumbnailer for mimetype image/svg+xml-compressed
+[Helpers.IconFetcher]: Loading thumbnailer /usr/share/thumbnailers/jxl.thumbnailer for mimetype image/jxl
+[Timings]: 0.010712 (0.004274): ../source/rofi.c:main:1200 Icon fetcher initialize
+[Timings]: 0.010746 (0.000034): ../source/rofi.c:main:1208 Pid file created
+[Timings]: 0.010748 (0.000002): ../source/rofi.c:main:1214 Text box setup
+[Timings]: 0.011673 (0.000925): ../source/rofi.c:main:1221 Setup late Display
+[X11Helper]: Monitor active
+[X11Helper]: Monitor lookup  by name : -5
+[X11Helper]: Monitor lookup  by name failed: -5
+[X11Helper]: Monitor id: -5
+[Theme]: Resolving link to background
+[Theme]: Resolving link background found: background
+[Theme]: Resolving link to selected
+[Theme]: Resolving link selected found: selected
+[Theme]: Resolving link to foreground
+[Theme]: Resolving link foreground found: foreground
+[Theme]: Resolving link to selected
+[Theme]: Resolving link selected found: selected
+[Theme]: Resolving link to urgent
+[Theme]: Resolving link urgent found: urgent
+[Theme]: Resolving link to background
+[Theme]: Resolving link background found: background
+[Theme]: Resolving link to active
+[Theme]: Resolving link active found: active
+[Theme]: Resolving link to background
+[Theme]: Resolving link background found: background
+[Theme]: Resolving link to foreground
+[Theme]: Resolving link foreground found: foreground
+[Theme]: Resolving link to background-alt
+[Theme]: Resolving link background-alt found: background-alt
+[Theme]: Resolving link to selected
+[Theme]: Resolving link selected found: selected
+[Theme]: Resolving link to background
+[Theme]: Resolving link background found: background
+[Theme]: Resolving link to foreground
+[Theme]: Resolving link foreground found: foreground
+[Theme]: Resolving link to urgent
+[Theme]: Resolving link urgent found: urgent
+[Theme]: Resolving link to background
+[Theme]: Resolving link background found: background
+[Theme]: Resolving link to active
+[Theme]: Resolving link active found: active
+[Theme]: Resolving link to background
+[Theme]: Resolving link background found: background
+[Theme]: Resolving link to background
+[Theme]: Resolving link background found: background
+[Theme]: Resolving link to foreground
+[Theme]: Resolving link foreground found: foreground
+[Theme]: Resolving link to urgent
+[Theme]: Resolving link urgent found: urgent
+[Theme]: Resolving link to background
+[Theme]: Resolving link background found: background
+[Theme]: Resolving link to active
+[Theme]: Resolving link active found: active
+[Theme]: Resolving link to background
+[Theme]: Resolving link background found: background
+[Theme]: Resolving link to urgent
+[Theme]: Resolving link urgent found: urgent
+[Theme]: Resolving link to background
+[Theme]: Resolving link background found: background
+[Theme]: Resolving link to active
+[Theme]: Resolving link active found: active
+[Theme]: Resolving link to background
+[Theme]: Resolving link background found: background
+[Theme]: Resolving link to selected
+[Theme]: Resolving link selected found: selected
+[Theme]: Resolving link to background
+[Theme]: Resolving link background found: background
+[Theme]: Resolving link to foreground
+[Theme]: Resolving link foreground found: foreground
+[Theme]: Resolving link to selected
+[Theme]: Resolving link selected found: selected
+[Timings]: 0.011796 (0.000123): ../source/rofi.c:main:1225 Theme setup
+[Timings]: 0.011810 (0.000014): ../source/rofi.c:startup:764 Startup
+[Timings]: 0.011812 (0.000002): ../source/rofi.c:startup:776 Grab keyboard
+[Timings]: 0.011897 (0.000085): ../source/view.c:__create_window:1060 xcb create window
+[Timings]: 0.011899 (0.000002): ../source/view.c:__create_window:1064 xcb create gc
+[Timings]: 0.012450 (0.000551): ../source/view.c:__create_window:1074 create cairo surface
+[Timings]: 0.012552 (0.000102): ../source/view.c:__create_window:1083 pango cairo font setup
+[X11Helper]: Monitor active
+[Theme]: Theme entry: #window  property padding unset.
+[Theme]: Theme entry: #window  property border unset.
+[Theme]: Theme entry: #window  property border-radius unset.
+[Theme]: Theme entry: #window  property margin unset.
+[Theme]: Found property: 'cursor' on 'window', but type String does not match expected type Cursor.
+[Theme]: Theme entry: #window  property cursor unset.
+[Theme]: Theme entry: #window  property enabled unset.
+[Theme]: Theme entry: #window  property border-aa unset.
+[Theme]: Theme entry: #window  property border-disable-nvidia-workaround unset.
+[Theme]: Theme entry: #window  property orientation unset.
+[Theme]: Theme entry: #window  property spacing unset.
+[Timings]: 0.012579 (0.000027): ../source/view.c:__create_window:1127 configure font
+[Timings]: 0.022279 (0.009700): ../source/view.c:__create_window:1135 textbox setup
+[Timings]: 0.022293 (0.000014): ../source/view.c:__create_window:1168 setup window attributes
+[Timings]: 0.022297 (0.000004): ../source/view.c:__create_window:1183 setup window fullscreen
+[Timings]: 0.022300 (0.000003): ../source/view.c:__create_window:1190 setup window name and class
+[Timings]: 0.022302 (0.000002): ../source/view.c:rofi_view_setup_fake_transparency:813 Fake start
+[Timings]: 0.022304 (0.000002): ../source/view.c:__create_window:1199 setup startup notification
+[Timings]: 0.022306 (0.000002): ../source/view.c:__create_window:1201 done
+[Timings]: 0.022313 (0.000007): ../source/rofi.c:startup:778 Create Window
+[Timings]: 0.022320 (0.000007): ../source/rofi.c:startup:780 Parse ABE
+[X11Helper]: Monitor active
+[Timings]: 0.022331 (0.000011): ../source/rofi.c:startup:783 Config sanity check
+[Timings]: 0.022395 (0.000064): ../source/view.c:rofi_view_create:2568 
+[Timings]: 0.022400 (0.000005): ../source/view.c:rofi_view_create:2603 Startup notification
+[Timings]: 0.022402 (0.000002): ../source/view.c:rofi_view_create:2606 Get active monitor
+[Theme]: Theme entry: #window  property padding unset.
+[Theme]: Theme entry: #window  property border unset.
+[Theme]: Theme entry: #window  property border-radius unset.
+[Theme]: Theme entry: #window  property margin unset.
+[Theme]: Found property: 'cursor' on 'window', but type String does not match expected type Cursor.
+[Theme]: Theme entry: #window  property cursor unset.
+[Theme]: Theme entry: #window  property enabled unset.
+[Theme]: Theme entry: #window  property border-aa unset.
+[Theme]: Theme entry: #window  property border-disable-nvidia-workaround unset.
+[Theme]: Theme entry: #window  property orientation unset.
+[Theme]: Theme entry: #window  property spacing unset.
+[Theme]: Theme entry: #mainbox  property padding unset.
+[Theme]: Theme entry: #mainbox  property border unset.
+[Theme]: Theme entry: #mainbox  property border-radius unset.
+[Theme]: Theme entry: #mainbox  property margin unset.
+[Theme]: Theme entry: #mainbox  property cursor unset.
+[Theme]: Theme entry: #mainbox  property border-aa unset.
+[Theme]: Theme entry: #mainbox  property border-disable-nvidia-workaround unset.
+[Theme]: Theme entry: #mainbox  property orientation unset.
+[Theme]: Theme entry: #mainbox  property expand unset.
+[Widgets.Box]: Widgets to large (height) for box: -2 0
+[Theme]: Theme entry: #inputbar  property padding unset.
+[Theme]: Theme entry: #inputbar  property border unset.
+[Theme]: Theme entry: #inputbar  property border-radius unset.
+[Theme]: Theme entry: #inputbar  property margin unset.
+[Theme]: Theme entry: #inputbar  property cursor unset.
+[Theme]: Theme entry: #inputbar  property border-aa unset.
+[Theme]: Theme entry: #inputbar  property border-disable-nvidia-workaround unset.
+[Theme]: Theme entry: #inputbar  property orientation unset.
+[Theme]: Theme entry: #inputbar  property expand unset.
+[Widgets.Box]: Widgets to large (height) for box: -40 0
+[Widgets.Box]: Widgets to large (height) for box: -2 0
+[Theme]: Theme entry: #textbox-prompt-colon  property padding unset.
+[Theme]: Theme entry: #textbox-prompt-colon  property border unset.
+[Theme]: Theme entry: #textbox-prompt-colon  property border-radius unset.
+[Theme]: Theme entry: #textbox-prompt-colon  property margin unset.
+[Theme]: Theme entry: #textbox-prompt-colon  property cursor unset.
+[Theme]: Theme entry: #textbox-prompt-colon  property border-aa unset.
+[Theme]: Theme entry: #textbox-prompt-colon  property border-disable-nvidia-workaround unset.
+[Theme]: Theme entry: #textbox-prompt-colon normal.normal property border unset.
+[Theme]: Theme entry: #textbox-prompt-colon normal.normal property border-radius unset.
+[Theme]: Theme entry: #textbox-prompt-colon normal.normal property markup unset.
+[Theme]: Theme entry: #textbox-prompt-colon normal.normal property placeholder unset.
+[Theme]: Theme entry: #textbox-prompt-colon normal.normal property password-mask unset.
+[Theme]: Theme entry: #textbox-prompt-colon normal.normal property vertical-align unset.
+[Theme]: Theme entry: #textbox-prompt-colon normal.normal property horizontal-align unset.
+[Theme]: Theme entry: #textbox-prompt-colon normal.normal property width unset.
+[Widgets.Box]: Widgets to large (width) for box: 0 0
+[Theme]: Theme entry: #textbox-prompt-colon normal.normal property width unset.
+[Widgets.Box]: Widgets to large (width) for box: 0 0
+[Widgets.Box]: Widgets to large (height) for box: -40 0
+[Widgets.Box]: Widgets to large (height) for box: -2 0
+[Widgets.Box]: Widgets to large (height) for box: -40 0
+[Widgets.Box]: Widgets to large (height) for box: -2 0
+[Theme]: Theme entry: #prompt  property padding unset.
+[Theme]: Theme entry: #prompt  property border unset.
+[Theme]: Theme entry: #prompt  property border-radius unset.
+[Theme]: Theme entry: #prompt  property margin unset.
+[Theme]: Theme entry: #prompt  property cursor unset.
+[Theme]: Theme entry: #prompt  property border-aa unset.
+[Theme]: Theme entry: #prompt  property border-disable-nvidia-workaround unset.
+[Theme]: Theme entry: #prompt normal.normal property border unset.
+[Theme]: Theme entry: #prompt normal.normal property border-radius unset.
+[Theme]: Theme entry: #prompt normal.normal property markup unset.
+[Theme]: Theme entry: #prompt normal.normal property str unset.
+[Theme]: Theme entry: #prompt normal.normal property content unset.
+[Theme]: Theme entry: #prompt normal.normal property placeholder unset.
+[Theme]: Theme entry: #prompt normal.normal property password-mask unset.
+[Theme]: Theme entry: #textbox-prompt-colon normal.normal property width unset.
+[Widgets.Box]: Widgets to large (width) for box: 0 0
+[Widgets.Box]: Widgets to large (height) for box: -40 0
+[Widgets.Box]: Widgets to large (height) for box: -2 0
+[Theme]: Theme entry: #prompt normal.normal property vertical-align unset.
+[Theme]: Theme entry: #prompt normal.normal property horizontal-align unset.
+[Theme]: Theme entry: #textbox-prompt-colon normal.normal property width unset.
+[Widgets.Box]: Widgets to large (width) for box: 0 0
+[Widgets.Box]: Widgets to large (height) for box: -40 0
+[Widgets.Box]: Widgets to large (height) for box: -2 0
+[Theme]: Theme entry: #prompt normal.normal property expand unset.
+[Theme]: Theme entry: #textbox-prompt-colon normal.normal property width unset.
+[Theme]: Theme entry: #prompt normal.normal property width unset.
+[Widgets.Box]: Widgets to large (width) for box: 0 0
+[Widgets.Box]: Widgets to large (height) for box: -40 0
+[Widgets.Box]: Widgets to large (height) for box: -2 0
+[Theme]: Theme entry: #message  property padding unset.
+[Theme]: Theme entry: #message  property border unset.
+[Theme]: Theme entry: #message  property border-radius unset.
+[Theme]: Theme entry: #message  property margin unset.
+[Theme]: Theme entry: #message  property cursor unset.
+[Theme]: Theme entry: #message  property border-aa unset.
+[Theme]: Theme entry: #message  property border-disable-nvidia-workaround unset.
+[Theme]: Theme entry: #textbox  property padding unset.
+[Theme]: Theme entry: #textbox  property border unset.
+[Theme]: Theme entry: #textbox  property border-radius unset.
+[Theme]: Theme entry: #textbox  property margin unset.
+[Theme]: Theme entry: #textbox  property cursor unset.
+[Theme]: Theme entry: #textbox  property enabled unset.
+[Theme]: Theme entry: #textbox  property border-aa unset.
+[Theme]: Theme entry: #textbox  property border-disable-nvidia-workaround unset.
+[Theme]: Theme entry: #textbox normal.normal property border unset.
+[Theme]: Theme entry: #textbox normal.normal property border-radius unset.
+[Theme]: Theme entry: #textbox normal.normal property markup unset.
+[Theme]: Theme entry: #textbox normal.normal property str unset.
+[Theme]: Theme entry: #textbox normal.normal property content unset.
+[Theme]: Theme entry: #textbox normal.normal property placeholder unset.
+[Theme]: Theme entry: #textbox normal.normal property password-mask unset.
+[Widgets.Box]: Widgets to large (height) for box: -40 0
+[Widgets.Box]: Widgets to large (height) for box: -2 0
+[Theme]: Theme entry: #message  property expand unset.
+[Widgets.Box]: Widgets to large (height) for box: -40 0
+[Widgets.Box]: Widgets to large (height) for box: -2 0
+[Theme]: Theme entry: #listview  property padding unset.
+[Theme]: Theme entry: #listview  property border unset.
+[Theme]: Theme entry: #listview  property border-radius unset.
+[Theme]: Theme entry: #listview  property margin unset.
+[Theme]: Found property: 'cursor' on 'listview', but type String does not match expected type Cursor.
+[Theme]: Theme entry: #listview  property cursor unset.
+[Theme]: Theme entry: #listview  property border-aa unset.
+[Theme]: Theme entry: #listview  property border-disable-nvidia-workaround unset.
+[Theme]: Theme entry: #scrollbar  property padding unset.
+[Theme]: Theme entry: #scrollbar  property border unset.
+[Theme]: Theme entry: #scrollbar  property border-radius unset.
+[Theme]: Theme entry: #scrollbar  property margin unset.
+[Theme]: Theme entry: #scrollbar  property cursor unset.
+[Theme]: Theme entry: #scrollbar  property enabled unset.
+[Theme]: Theme entry: #scrollbar  property border-aa unset.
+[Theme]: Theme entry: #scrollbar  property border-disable-nvidia-workaround unset.
+[Theme]: Theme entry: #scrollbar  property handle-width unset.
+[Theme]: Theme entry: #element  property padding unset.
+[Theme]: Theme entry: #element  property border unset.
+[Theme]: Theme entry: #element  property border-radius unset.
+[Theme]: Theme entry: #element  property margin unset.
+[Theme]: Theme entry: #element  property border-aa unset.
+[Theme]: Theme entry: #element  property border-disable-nvidia-workaround unset.
+[Theme]: Theme entry: #element  property orientation unset.
+[Theme]: Theme entry: #element  property spacing unset.
+[Theme]: Theme entry: #element-text  property padding unset.
+[Theme]: Theme entry: #element-text  property border unset.
+[Theme]: Theme entry: #element-text  property border-radius unset.
+[Theme]: Theme entry: #element-text  property margin unset.
+[Theme]: Theme entry: #element-text  property enabled unset.
+[Theme]: Theme entry: #element-text  property border-aa unset.
+[Theme]: Theme entry: #element-text  property border-disable-nvidia-workaround unset.
+[Theme]: Theme entry: #element-text normal.normal property border unset.
+[Theme]: Theme entry: #element-text normal.normal property border-radius unset.
+[Theme]: Theme entry: #element-text normal.normal property markup unset.
+[Theme]: Theme entry: #element-text normal.normal property str unset.
+[Theme]: Theme entry: #element-text normal.normal property placeholder unset.
+[Theme]: Theme entry: #element-text normal.normal property password-mask unset.
+[Theme]: Theme entry: #element-text normal.normal property expand unset.
+[Widgets.Box]: Widgets to large (width) for box: -20 0
+[Theme]: Theme entry: #listview  property fixed-height unset.
+[Theme]: Theme entry: #listview  property dynamic unset.
+[Theme]: Theme entry: #listview  property reverse unset.
+[Theme]: Theme entry: #listview  property flow unset.
+[Theme]: Theme entry: #listview  property fixed-columns unset.
+[Theme]: Theme entry: #listview  property require-input unset.
+[Theme]: Theme entry: #listview  property expand unset.
+[Widgets.Box]: Widgets to large (height) for box: -40 0
+[Widgets.Box]: Widgets to large (height) for box: -2 0
+[Theme]: Theme entry: #window  property height unset.
+[View]: Re-size window based internal request: 400x350.
+[Theme]: Theme entry: #textbox-prompt-colon normal.normal property width unset.
+[Theme]: Theme entry: #prompt normal.normal property width unset.
+[Timings]: 0.025076 (0.002674): ../source/view.c:rofi_view_refilter_real:1476 Filter start
+[Timings]: 0.025079 (0.000003): ../source/view.c:rofi_view_refilter_real:1481 Filter reload rows
+[Timings]: 0.025081 (0.000002): ../source/view.c:rofi_view_refilter_real:1486 Filter tokenize
+[Timings]: 0.025082 (0.000001): ../source/view.c:rofi_view_refilter_real:1572 Filter matching done
+[Timings]: 0.025084 (0.000002): ../source/widgets/listview.c:listview_set_num_elements:626 listview_set_num_elements
+[Timings]: 0.025086 (0.000002): ../source/widgets/listview.c:listview_set_num_elements:632 Set selected
+[Timings]: 0.025087 (0.000001): ../source/widgets/listview.c:listview_set_num_elements:634 recompute elements
+[Timings]: 0.025088 (0.000001): ../source/widgets/listview.c:listview_set_num_elements:636 queue redraw
+[Timings]: 0.025090 (0.000002): ../source/view.c:rofi_view_refilter_real:1585 Update filter lines
+[Theme]: Theme entry: #window  property height unset.
+[Timings]: 0.025102 (0.000012): ../source/view.c:rofi_view_refilter_real:1603 Filter resize window based on window 
+[Timings]: 0.025104 (0.000002): ../source/view.c:rofi_view_refilter_real:1605 Filter done
+[View]: Redraw view
+[Timings]: 0.025106 (0.000002): ../source/view.c:rofi_view_update:1420 
+[Timings]: 0.025120 (0.000014): ../source/view.c:rofi_view_update:1439 Background
+[Theme]: Theme entry: #window  property background-image unset.
+[Theme]: Theme entry: #mainbox  property background-image unset.
+[Theme]: Theme entry: #inputbar  property background-image unset.
+[Theme]: Theme entry: #textbox-prompt-colon normal.normal property background-image unset.
+[Theme]: Theme entry: #textbox-prompt-colon normal.normal property text-outline unset.
+[Theme]: Theme entry: #prompt normal.normal property background-image unset.
+[Theme]: Theme entry: #prompt normal.normal property text-outline unset.
+[Theme]: Theme entry: #listview  property background-image unset.
+[Timings]: 0.025277 (0.000157): ../source/view.c:rofi_view_update:1452 widgets
+[Theme]: Found property: 'delay' on 'timeout', but type Integer does not match expected type Double.
+[View]: redraw 1
+[Timings]: 0.030973 (0.005696): ../source/view.c:rofi_view_repaint:345 Update start
+[View]: Redraw view
+[Timings]: 0.030976 (0.000003): ../source/view.c:rofi_view_update:1420 
+[Timings]: 0.030978 (0.000002): ../source/view.c:rofi_view_update:1439 Background
+[Theme]: Theme entry: #window  property background-image unset.
+[Theme]: Theme entry: #mainbox  property background-image unset.
+[Theme]: Theme entry: #inputbar  property background-image unset.
+[Theme]: Theme entry: #textbox-prompt-colon normal.normal property background-image unset.
+[Theme]: Theme entry: #textbox-prompt-colon normal.normal property text-outline unset.
+[Theme]: Theme entry: #prompt normal.normal property background-image unset.
+[Theme]: Theme entry: #prompt normal.normal property text-outline unset.
+[Theme]: Theme entry: #listview  property background-image unset.
+[Timings]: 0.031004 (0.000026): ../source/view.c:rofi_view_update:1452 widgets
+[View]: expose event
+[Timings]: 0.031006 (0.000002): ../source/view.c:rofi_view_repaint:348 Expose
+[Timings]: 0.031010 (0.000004): ../source/view.c:rofi_view_repaint:353 flush
+[View]: redraw 2
+[Timings]: 0.031078 (0.000068): ../source/view.c:rofi_view_repaint:345 Update start
+[View]: expose event
+[Timings]: 0.031081 (0.000003): ../source/view.c:rofi_view_repaint:348 Expose
+[Timings]: 0.031083 (0.000002): ../source/view.c:rofi_view_repaint:353 flush
+[IMDKit]: release handler 36
+[IMDKit]: press handler 9
+[Theme]: Found property: 'delay' on 'timeout', but type Integer does not match expected type Double.
+[Rofi]: Teardown
+[View]: Cleanup.
+[View]: Unmapping and free'ing window
+[View]: Entry filename output: '/home/andy/.cache/rofi-entry-history.txt'
+[X11Helper]: Cleaning up XCB and XKB
+[Timings]: 2.683767 (0.000000): Stopped

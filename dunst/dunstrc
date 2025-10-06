@@ -1,0 +1,20 @@
+[global]
+    # Geometry and padding similar vibe
+    geometry = "300x5-0+0"  # width x height -xoffset +yoffset, adjust as you want
+    font = NotoSansM NFM 12
+    follow = keyboard
+
+[urgency_low]
+    background = "#263238CC"
+    foreground = "#EEFFFF"
+    frame_color = "#805B87"
+
+[urgency_normal]
+    background = "#2E3C43CC"
+    foreground = "#EEFFFF"
+    frame_color = "#C792EA"
+
+[urgency_critical]
+    background = "#F07178CC"
+    foreground = "#FFFFFF"
+    frame_color = "#FF5370"
