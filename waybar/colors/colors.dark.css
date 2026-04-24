@@ -1,0 +1,13 @@
+/* Dracula Color theme */
+
+@define-color module-bg #282A36;
+@define-color tooltip-bg #6272A4;
+@define-color inactive #44475A;
+@define-color fg #F8F8F2;
+@define-color workspace-fg @fg;
+
+@define-color red #FF5555;
+@define-color blue #8BE9FD;
+@define-color yellow #FFB86C;
+@define-color green #50FA7B;
+@define-color pink #FF79C6;
