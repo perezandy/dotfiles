@@ -17,7 +17,7 @@
 !illogical-impulse/config.json
 
 # Terminal
-!kitty/
+!kitty/theme.conf
 !kitty/kitty.conf
 
 # System monitor
