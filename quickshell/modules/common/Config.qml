@@ -209,6 +209,13 @@ Singleton {
                         property real x: 400
                         property real y: 100
                     }
+                    property JsonObject githubCommits: JsonObject {
+                        property bool enable: true
+                        property string username: ""   // Your GitHub username
+                        property int fetchInterval: 30 // Minutes between auto-refresh
+                        // Token is stored in the system keyring, not here.
+                        // To set it: secret-tool store --label="GitHub Token" application illogical-impulse key githubToken
+                    }
                 }
                 property string wallpaperPath: ""
                 property string thumbnailPath: ""

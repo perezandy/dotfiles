@@ -71,6 +71,14 @@ AbstractBackgroundWidget {
         StatusRow {
             anchors.horizontalCenter: parent.horizontalCenter
         }
+
+        FadeLoader {
+            shown: Config.options.background.widgets.githubCommits.enable
+                && GithubCommits.username !== ""
+            sourceComponent: GithubCommitsGrid {
+                colText: root.colText
+            }
+        }
     }
 
     component StatusRow: Item {
