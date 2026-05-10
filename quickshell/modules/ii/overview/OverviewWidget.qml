@@ -142,6 +142,7 @@ Item {
                                 onPressed: {
                                     if (root.draggingTargetWorkspace === -1) {
                                         GlobalStates.overviewOpen = false
+                                        GlobalStates.workspacesOpen = false
                                         Hyprland.dispatch(`workspace ${workspace.workspaceValue}`)
                                     }
                                 }
@@ -284,6 +285,7 @@ Item {
 
                             if (event.button === Qt.LeftButton) {
                                 GlobalStates.overviewOpen = false
+                                GlobalStates.workspacesOpen = false
                                 Hyprland.dispatch(`focuswindow address:${windowData.address}`)
                                 event.accepted = true
                             } else if (event.button === Qt.MiddleButton) {

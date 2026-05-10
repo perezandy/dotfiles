@@ -1,5 +1,33 @@
-discord/
-unityhub/
-unity/
-google-chrome-canary/
+# Ignore everything by default
+*
 
+# This file
+!.gitignore
+
+# Window manager + keybindings + colors
+!hypr/
+!hypr/**
+
+# Shell UI + widgets
+!quickshell/
+!quickshell/**
+
+# Quickshell runtime config
+!illogical-impulse/
+!illogical-impulse/config.json
+
+# Terminal
+!kitty/
+!kitty/kitty.conf
+
+# System monitor
+!btop/
+!btop/btop.conf
+
+# Audio visualizer
+!cava/
+!cava/**
+
+# Editor
+!nvim/
+!nvim/**
