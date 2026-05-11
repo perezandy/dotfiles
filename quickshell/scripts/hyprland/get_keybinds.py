@@ -139,11 +139,19 @@ def autogenerate_comment(dispatcher: str, params: str = "") -> str:
 def get_keybind_at_line(line_number, line_start = 0):
     global content_lines
     line = content_lines[line_number]
-    _, keys = line.split("=", 1)
+    bind_type, keys = line.split("=", 1)
+    bind_type = bind_type.strip()
     keys, *comment = keys.split("#", 1)
 
-    mods, key, dispatcher, *params = list(map(str.strip, keys.split(",", 4)))
-    params = "".join(map(str.strip, params))
+    # bindd has an extra description field: MODS, KEY, DESCRIPTION, DISPATCHER, PARAMS
+    is_bindd = bind_type == "bindd"
+    if is_bindd:
+        mods, key, description, dispatcher, *params = list(map(str.strip, keys.split(",", 5)))
+        params = "".join(map(str.strip, params))
+        comment = [description]
+    else:
+        mods, key, dispatcher, *params = list(map(str.strip, keys.split(",", 4)))
+        params = "".join(map(str.strip, params))
 
     # Remove empty spaces
     comment = list(map(str.strip, comment))

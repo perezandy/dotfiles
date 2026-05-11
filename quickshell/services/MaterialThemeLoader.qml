@@ -21,15 +21,26 @@ Singleton {
     function applyColors(fileContent) {
         const json = JSON.parse(fileContent)
         for (const key in json) {
-            if (json.hasOwnProperty(key)) {
-                // Convert snake_case to CamelCase
-                const camelCaseKey = key.replace(/_([a-z])/g, (g) => g[1].toUpperCase())
-                const m3Key = `m3${camelCaseKey}`
-                Appearance.m3colors[m3Key] = json[key]
+            if (!json.hasOwnProperty(key)) continue
+
+            // dark_mode → Appearance.m3colors.darkmode (no prefix, bool)
+            if (key === "dark_mode") {
+                Appearance.m3colors.darkmode = json[key]
+                continue
             }
+
+            // term_N → Appearance.m3colors.termN (no m3 prefix)
+            if (/^term_\d+$/.test(key)) {
+                const termKey = key.replace("_", "") // "term_0" → "term0"
+                Appearance.m3colors[termKey] = json[key]
+                continue
+            }
+
+            // All other keys: snake_case → m3camelCase
+            const camelCaseKey = key.replace(/_([a-z])/g, (g) => g[1].toUpperCase())
+            const m3Key = `m3${camelCaseKey}`
+            Appearance.m3colors[m3Key] = json[key]
         }
-        
-        Appearance.m3colors.darkmode = (Appearance.m3colors.m3background.hslLightness < 0.5)
     }
 
     function resetFilePathNextTime() {

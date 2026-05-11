@@ -13,20 +13,29 @@ Item {
 
     property bool warning: percentage * 100 >= warningThreshold
 
-    ClippedFilledCircularProgress {
-        id: resourceProgress
+    Item {
         anchors.centerIn: parent
-        value: percentage
-        enableAnimation: false
-        colPrimary: root.warning ? Appearance.colors.colError : Appearance.colors.colOnSecondaryContainer
-        accountForLightBleeding: !root.warning
+        implicitWidth: resourceProgress.implicitWidth
+        implicitHeight: resourceProgress.implicitHeight
+
+        ClippedFilledCircularProgress {
+            id: resourceProgress
+            anchors.fill: parent
+            value: percentage
+            enableAnimation: false
+            colPrimary:   root.warning ? Appearance.colors.colError : Appearance.colors.colPrimary
+            colSecondary: root.warning ? ColorUtils.transparentize(Appearance.colors.colError, 0.5) : Appearance.m3colors.m3secondaryContainer
+            accountForLightBleeding: !root.warning
+            Item { width: resourceProgress.implicitWidth; height: resourceProgress.implicitHeight }
+        }
 
         MaterialSymbol {
+            anchors.centerIn: parent
             font.weight: Font.Medium
             fill: 1
             text: root.iconName
             iconSize: 13
-            color: Appearance.colors.colOnSecondaryContainer
+            color: Appearance.m3colors.m3onPrimary
         }
     }
 

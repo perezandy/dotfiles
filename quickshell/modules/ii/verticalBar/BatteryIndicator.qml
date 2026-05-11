@@ -25,7 +25,7 @@ MouseArea {
         valueBarHeight: 36
         value: percentage
         // value: 1
-        highlightColor: (isLow && !isCharging) ? Appearance.m3colors.m3error : Appearance.colors.colOnSecondaryContainer
+        highlightColor: (isLow && !isCharging) ? Appearance.m3colors.m3error : Appearance.colors.colPrimary
 
         font {
             pixelSize: 13
@@ -33,37 +33,37 @@ MouseArea {
         }
 
         textMask: Item {
-            anchors.centerIn: parent
             width: batteryProgress.valueBarWidth
             height: batteryProgress.valueBarHeight
+        }
+    }
 
-            Column {
-                anchors.centerIn: parent
-                spacing: -4
+    Column {
+        anchors.centerIn: batteryProgress
+        spacing: -4
 
-                MaterialSymbol {
-                    id: boltIcon
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    fill: 1
-                    text: {
-                        if (batteryProgress.value == 1) {
-                            return "check";
-                        } else if (root.isCharging) {
-                            return "bolt";
-                        } else {
-                            return Icons.getBatteryIcon(Battery.percentage * 100);
-                        }
-                    }
-                    iconSize: Appearance.font.pixelSize.normal
-                    animateChange: true
-                }
-                StyledText {
-                    visible: text.length <= 2
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    font: batteryProgress.font
-                    text: batteryProgress.text
+        MaterialSymbol {
+            anchors.horizontalCenter: parent.horizontalCenter
+            fill: 1
+            text: {
+                if (batteryProgress.value == 1) {
+                    return "check";
+                } else if (root.isCharging) {
+                    return "bolt";
+                } else {
+                    return Icons.getBatteryIcon(Battery.percentage * 100);
                 }
             }
+            iconSize: Appearance.font.pixelSize.normal
+            animateChange: true
+            color: Appearance.m3colors.m3onPrimary
+        }
+        StyledText {
+            visible: text.length <= 2
+            anchors.horizontalCenter: parent.horizontalCenter
+            font: batteryProgress.font
+            text: batteryProgress.text
+            color: Appearance.m3colors.m3onPrimary
         }
     }
 

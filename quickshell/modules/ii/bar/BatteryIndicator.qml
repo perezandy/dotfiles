@@ -22,37 +22,34 @@ MouseArea {
         id: batteryProgress
         anchors.centerIn: parent
         value: percentage
-        highlightColor: (isLow && !isCharging) ? Appearance.m3colors.m3error : Appearance.colors.colOnSecondaryContainer
-
+        highlightColor: (isLow && !isCharging) ? Appearance.m3colors.m3error : Appearance.colors.colPrimary
+        // Empty mask — disables the cutout, text rendered as visible overlay below
         Item {
-            anchors.centerIn: parent
             width: batteryProgress.valueBarWidth
             height: batteryProgress.valueBarHeight
+        }
+    }
 
-            RowLayout {
-                anchors {
-                    horizontalCenter: parent.horizontalCenter
-                    bottom: parent.bottom
-                    bottomMargin: (parent.height - height) / 2
-                }
-                spacing: 0
+    RowLayout {
+        anchors.centerIn: batteryProgress
+        spacing: 0
 
-                MaterialSymbol {
-                    id: boltIcon
-                    Layout.alignment: Qt.AlignVCenter
-                    Layout.leftMargin: -2
-                    Layout.rightMargin: -2
-                    fill: 1
-                    text: "bolt"
-                    iconSize: Appearance.font.pixelSize.smaller
-                    visible: isCharging && percentage < 1 // TODO: animation
-                }
-                StyledText {
-                    Layout.alignment: Qt.AlignVCenter
-                    font: batteryProgress.font
-                    text: batteryProgress.text
-                }
-            }
+        MaterialSymbol {
+            id: boltIcon
+            Layout.alignment: Qt.AlignVCenter
+            Layout.leftMargin: -2
+            Layout.rightMargin: -2
+            fill: 1
+            text: "bolt"
+            iconSize: Appearance.font.pixelSize.smaller
+            visible: isCharging && percentage < 1
+            color: Appearance.m3colors.m3onPrimary
+        }
+        StyledText {
+            Layout.alignment: Qt.AlignVCenter
+            font: batteryProgress.font
+            text: batteryProgress.text
+            color: Appearance.m3colors.m3onPrimary
         }
     }
 

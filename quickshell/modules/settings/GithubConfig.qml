@@ -20,7 +20,7 @@ ContentPage {
     // Read existing token on open (just to know if one exists)
     Process {
         id: tokenReader
-        command: ["secret-tool", "lookup", "application", "illogical-impulse", "key", "githubToken"]
+        command: ["secret-tool", "lookup", "application", "quickshell", "key", "githubToken"]
         stdout: StdioCollector {
             onStreamFinished: {
                 const t = text.trim()
@@ -36,7 +36,7 @@ ContentPage {
     Process {
         id: tokenWriter
         command: ["secret-tool", "store", "--label=GitHub Token",
-                  "application", "illogical-impulse", "key", "githubToken"]
+                  "application", "quickshell", "key", "githubToken"]
         stdinEnabled: true
         onRunningChanged: {
             if (running) {

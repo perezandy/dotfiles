@@ -122,21 +122,6 @@ Singleton {
                     property real backgroundTransparency: 0.11
                     property real contentTransparency: 0.57
                 }
-                property JsonObject wallpaperTheming: JsonObject {
-                    property bool enableAppsAndShell: true
-                    property bool enableQtApps: true
-                    property bool enableTerminal: true
-                    property JsonObject terminalGenerationProps: JsonObject {
-                        property real harmony: 0.6
-                        property real harmonizeThreshold: 100
-                        property real termFgBoost: 0.35
-                        property bool forceDarkMode: false
-                    }
-                }
-                property JsonObject palette: JsonObject {
-                    property string type: "auto" // Allowed: auto, scheme-content, scheme-expressive, scheme-fidelity, scheme-fruit-salad, scheme-monochrome, scheme-neutral, scheme-rainbow, scheme-tonal-spot
-                    property string accentColor: ""
-                }
             }
 
             property JsonObject audio: JsonObject {
@@ -214,7 +199,7 @@ Singleton {
                         property string username: ""   // Your GitHub username
                         property int fetchInterval: 30 // Minutes between auto-refresh
                         // Token is stored in the system keyring, not here.
-                        // To set it: secret-tool store --label="GitHub Token" application illogical-impulse key githubToken
+                        // To set it: secret-tool store --label="GitHub Token" application quickshell key githubToken
                     }
                 }
                 property string wallpaperPath: ""

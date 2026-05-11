@@ -9,8 +9,8 @@ pragma Singleton
 pragma ComponentBehavior: Bound
 
 /**
- * Provides a list of wallpapers and an "apply" action that calls the existing
- * switchwall.sh script. Pretty much a limited file browsing service.
+ * Provides a list of wallpapers and an "apply" action.
+ * Color generation is decoupled — run matugen separately and point its output to theme.json.
  */
 Singleton {
     id: root
@@ -35,26 +35,33 @@ Singleton {
 
     function load () {} // For forcing initialization
 
-    // Executions
-    Process {
-        id: applyProc
-    }
-    
-    function openFallbackPicker(darkMode = Appearance.m3colors.darkmode) {
-        applyProc.exec([
-            Directories.wallpaperSwitchScriptPath,
-            "--mode", (darkMode ? "dark" : "light")
-        ])
+    // Apply wallpaper by updating the config path directly.
+    // Color theme is managed externally (e.g. via matugen writing to theme.json).
+    function apply(path) {
+        if (!path || path.length === 0) return
+        Config.options.background.wallpaperPath = FileUtils.trimFileProtocol(path)
+        root.changed()
     }
 
-    function apply(path, darkMode = Appearance.m3colors.darkmode) {
-        if (!path || path.length === 0) return
-        applyProc.exec([
-            Directories.wallpaperSwitchScriptPath,
-            "--image", path,
-            "--mode", (darkMode ? "dark" : "light")
-        ])
-        root.changed()
+    // Opens a file picker dialog and applies the chosen wallpaper.
+    Process {
+        id: filePickerProc
+        command: [
+            "kdialog", "--getopenfilename",
+            FileUtils.trimFileProtocol(root.directory?.toString() ?? Directories.pictures),
+            "*.jpg *.jpeg *.png *.webp *.avif *.bmp *.svg"
+        ]
+        stdout: StdioCollector {
+            onStreamFinished: {
+                const path = text.trim()
+                if (path.length > 0) root.apply(path)
+            }
+        }
+    }
+
+    function openFallbackPicker() {
+        filePickerProc.running = false
+        filePickerProc.running = true
     }
 
     Process {

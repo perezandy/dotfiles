@@ -48,27 +48,29 @@ Item {
         spacing: 4
         anchors.fill: parent
 
-        ClippedFilledCircularProgress {
-            id: mediaCircProg
+        Item {
             Layout.alignment: Qt.AlignVCenter
-            lineWidth: Appearance.rounding.unsharpen
-            value: activePlayer?.position / activePlayer?.length
-            implicitSize: 20
-            colPrimary: Appearance.colors.colOnSecondaryContainer
-            enableAnimation: false
+            implicitWidth: 20
+            implicitHeight: 20
 
-            Item {
+            ClippedFilledCircularProgress {
+                id: mediaCircProg
+                anchors.fill: parent
+                lineWidth: Appearance.rounding.unsharpen
+                value: activePlayer?.position / activePlayer?.length
+                implicitSize: 20
+                colPrimary:   Appearance.colors.colPrimary
+                colSecondary: Appearance.m3colors.m3secondaryContainer
+                enableAnimation: false
+                Item { width: 20; height: 20 }
+            }
+
+            MaterialSymbol {
                 anchors.centerIn: parent
-                width: mediaCircProg.implicitSize
-                height: mediaCircProg.implicitSize
-                
-                MaterialSymbol {
-                    anchors.centerIn: parent
-                    fill: 1
-                    text: activePlayer?.isPlaying ? "pause" : "music_note"
-                    iconSize: Appearance.font.pixelSize.normal
-                    color: Appearance.m3colors.m3onSecondaryContainer
-                }
+                fill: 1
+                text: activePlayer?.isPlaying ? "pause" : "music_note"
+                iconSize: Appearance.font.pixelSize.normal
+                color: Appearance.m3colors.m3onPrimary
             }
         }
 

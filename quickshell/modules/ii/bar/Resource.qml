@@ -23,29 +23,31 @@ Item {
             verticalCenter: parent.verticalCenter
         }
 
-        ClippedFilledCircularProgress {
-            id: resourceCircProg
+        Item {
             Layout.alignment: Qt.AlignVCenter
-            lineWidth: Appearance.rounding.unsharpen
-            value: percentage
-            implicitSize: 20
-            colPrimary: root.warning ? Appearance.colors.colError : Appearance.colors.colOnSecondaryContainer
-            accountForLightBleeding: !root.warning
-            enableAnimation: false
+            implicitWidth: 20
+            implicitHeight: 20
 
-            Item {
+            ClippedFilledCircularProgress {
+                id: resourceCircProg
+                anchors.fill: parent
+                lineWidth: Appearance.rounding.unsharpen
+                value: percentage
+                implicitSize: 20
+                colPrimary:   root.warning ? Appearance.colors.colError : Appearance.colors.colPrimary
+                colSecondary: root.warning ? ColorUtils.transparentize(Appearance.colors.colError, 0.5) : Appearance.m3colors.m3secondaryContainer
+                accountForLightBleeding: !root.warning
+                enableAnimation: false
+                Item { width: 20; height: 20 }
+            }
+
+            MaterialSymbol {
                 anchors.centerIn: parent
-                width: resourceCircProg.implicitSize
-                height: resourceCircProg.implicitSize
-                
-                MaterialSymbol {
-                    anchors.centerIn: parent
-                    font.weight: Font.DemiBold
-                    fill: 1
-                    text: iconName
-                    iconSize: Appearance.font.pixelSize.normal
-                    color: Appearance.m3colors.m3onSecondaryContainer
-                }
+                font.weight: Font.DemiBold
+                fill: 1
+                text: iconName
+                iconSize: Appearance.font.pixelSize.normal
+                color: Appearance.m3colors.m3onPrimary
             }
         }
 

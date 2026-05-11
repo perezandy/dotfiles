@@ -112,7 +112,7 @@ Singleton {
 
     Process {
         id: tokenLoader
-        command: ["secret-tool", "lookup", "application", "illogical-impulse", "key", "githubToken"]
+        command: ["secret-tool", "lookup", "application", "quickshell", "key", "githubToken"]
         stdout: StdioCollector {
             onStreamFinished: {
                 const t = text.trim()
