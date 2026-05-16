@@ -25,7 +25,7 @@ RowLayout {
             id: labelWidget
             Layout.fillWidth: true
             text: root.text
-            color: Appearance.colors.colOnSecondaryContainer
+            color: Appearance.colors.colOnLayer2
             opacity: root.enabled ? 1 : 0.4
         }
     }

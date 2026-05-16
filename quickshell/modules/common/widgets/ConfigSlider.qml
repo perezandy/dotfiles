@@ -32,7 +32,7 @@ RowLayout {
             id: labelWidget
             Layout.preferredWidth: root.textWidth
             text: root.text
-            color: Appearance.colors.colOnSecondaryContainer
+            color: Appearance.colors.colOnLayer2
         }
     }
     

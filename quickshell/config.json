@@ -98,7 +98,7 @@
                 "enable": true,
                 "placementStrategy": "leastBusy",
                 "quote": {
-                    "enable": false,
+                    "enable": true,
                     "text": ""
                 },
                 "showOnlyWhenLocked": false,
@@ -110,7 +110,7 @@
             "githubCommits": {
                 "enable": true,
                 "fetchInterval": 30,
-                "username": ""
+                "username": "sub-devel"
             },
             "weather": {
                 "enable": false,
@@ -132,7 +132,7 @@
         },
         "borderless": false,
         "bottom": false,
-        "cornerStyle": 0,
+        "cornerStyle": 2,
         "floatStyleShadow": true,
         "indicators": {
             "notifications": {
@@ -155,7 +155,7 @@
         "topLeftIcon": "spark",
         "utilButtons": {
             "showColorPicker": true,
-            "showDarkModeToggle": true,
+            "showDarkModeToggle": false,
             "showKeyboardToggle": false,
             "showMicToggle": false,
             "showPerformanceProfileToggle": false,
@@ -259,7 +259,7 @@
         },
         "night": {
             "automatic": false,
-            "colorTemperature": 5000,
+            "colorTemperature": 4973,
             "from": "19:00",
             "to": "06:30"
         }

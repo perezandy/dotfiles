@@ -267,7 +267,7 @@ Item {
                         elide: Text.ElideRight
                         color: button.isActiveOnFocusedMonitor ?
                             Appearance.m3colors.m3onPrimary :
-                            (workspaceOccupied[index] ? Appearance.m3colors.m3onSecondaryContainer :
+                            (workspaceOccupied[index] ? Appearance.colors.colOnLayer1 :
                                 Appearance.colors.colOnLayer1Inactive)
 
                         Behavior on opacity {
@@ -287,7 +287,7 @@ Item {
                         radius: width / 2
                         color: button.isActiveOnFocusedMonitor ?
                             Appearance.m3colors.m3onPrimary :
-                            (workspaceOccupied[index] ? Appearance.m3colors.m3onSecondaryContainer :
+                            (workspaceOccupied[index] ? Appearance.colors.colOnLayer1 :
                                 Appearance.colors.colOnLayer1Inactive)
 
                         Behavior on opacity {

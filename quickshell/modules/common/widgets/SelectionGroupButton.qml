@@ -36,7 +36,7 @@ GroupButton {
                     anchors.centerIn: parent
                     text: root.buttonIcon
                     iconSize: Appearance.font.pixelSize.larger
-                    color: root.toggled ? Appearance.colors.colOnPrimary : Appearance.colors.colOnSecondaryContainer
+                    color: root.toggled ? Appearance.colors.colOnPrimary : Appearance.colors.colOnLayer1
                 }
             }
         }
@@ -54,7 +54,7 @@ GroupButton {
             StyledText {
                 id: textItem
                 anchors.centerIn: parent
-                color: root.toggled ? Appearance.colors.colOnPrimary : Appearance.colors.colOnSecondaryContainer
+                color: root.toggled ? Appearance.colors.colOnPrimary : Appearance.colors.colOnLayer1
                 text: root.buttonText
             }
         }

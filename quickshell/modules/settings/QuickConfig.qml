@@ -103,7 +103,7 @@ ContentPage {
                             StyledText {
                                 font.pixelSize: Appearance.font.pixelSize.small
                                 text: Translation.tr("Choose file")
-                                color: Appearance.colors.colOnSecondaryContainer
+                                color: Appearance.colors.colOnLayer2
                             }
                             RowLayout {
                                 spacing: 3

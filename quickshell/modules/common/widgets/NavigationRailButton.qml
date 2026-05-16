@@ -52,9 +52,9 @@ TabButton {
             radius: Appearance.rounding.full
             color: toggled ? 
                 root.showToggledHighlight ?
-                    (root.down ? Appearance.colors.colSecondaryContainerActive : root.hovered ? Appearance.colors.colSecondaryContainerHover : Appearance.colors.colSecondaryContainer)
-                    : ColorUtils.transparentize(Appearance.colors.colSecondaryContainer) :
-                (root.down ? Appearance.colors.colLayer1Active : root.hovered ? Appearance.colors.colLayer1Hover : ColorUtils.transparentize(Appearance.colors.colLayer1Hover, 1))
+                    (root.down ? Appearance.colors.colPrimaryActive : root.hovered ? Appearance.colors.colPrimaryHover : Appearance.colors.colPrimary)
+                    : ColorUtils.transparentize(Appearance.colors.colPrimary) :
+                (root.down ? Appearance.colors.colPrimaryActive : root.hovered ? Appearance.colors.colPrimary : ColorUtils.transparentize(Appearance.colors.colLayer1Hover, 1))
 
             states: State {
                 name: "expanded"
@@ -106,7 +106,7 @@ TabButton {
                 fill: toggled ? 1 : 0
                 font.weight: (toggled || root.hovered) ? Font.DemiBold : Font.Normal
                 text: buttonIcon
-                color: toggled ? Appearance.m3colors.m3onSecondaryContainer : Appearance.colors.colOnLayer1
+                color: (toggled || root.hovered || root.down) ? Appearance.colors.colOnPrimary : Appearance.colors.colOnLayer1
 
                 Behavior on color {
                     animation: Appearance.animation.elementMoveFast.colorAnimation.createObject(this)
@@ -143,7 +143,11 @@ TabButton {
             }
             text: buttonText
             font.pixelSize: 14
-            color: Appearance.colors.colOnLayer1
+            color: (root.toggled || root.hovered || root.down) ? Appearance.colors.colOnPrimary : Appearance.colors.colOnLayer1
+
+            Behavior on color {
+                animation: Appearance.animation.elementMoveFast.colorAnimation.createObject(this)
+            }
         }
     }
 
