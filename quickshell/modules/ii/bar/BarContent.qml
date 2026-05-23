@@ -191,11 +191,11 @@ Item { // Bar content region
                 colBackground: barRightSideMouseArea.hovered ? Appearance.colors.colLayer1Hover : ColorUtils.transparentize(Appearance.colors.colLayer1Hover, 1)
                 colBackgroundHover: Appearance.colors.colLayer1Hover
                 colRipple: Appearance.colors.colLayer1Active
-                colBackgroundToggled: Appearance.colors.colSecondaryContainer
-                colBackgroundToggledHover: Appearance.colors.colSecondaryContainerHover
-                colRippleToggled: Appearance.colors.colSecondaryContainerActive
+                colBackgroundToggled: Appearance.colors.colPrimary
+                colBackgroundToggledHover: Appearance.colors.colPrimaryHover
+                colRippleToggled: Appearance.colors.colPrimaryActive
                 toggled: GlobalStates.sidebarRightOpen
-                property color colText: toggled ? Appearance.m3colors.m3onSecondaryContainer : Appearance.colors.colOnLayer0
+                property color colText: toggled ? Appearance.colors.colOnPrimary : Appearance.colors.colOnLayer1
 
                 Behavior on colText {
                     animation: Appearance.animation.elementMoveFast.colorAnimation.createObject(this)

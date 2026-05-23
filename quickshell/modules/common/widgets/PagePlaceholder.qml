@@ -35,6 +35,7 @@ Item {
             padding: 12
             iconSize: 56
             rotation: -30 * (1 - root.opacity)
+            colSymbol: Appearance.colors.colOnLayer1Inactive
         }
         StyledText {
             id: widgetNameText

@@ -113,7 +113,7 @@ Rectangle {
                 rightMargin: nearFull ? 14 : 8
             }
             iconSize: 20
-            color: nearFull ? Appearance.colors.colOnPrimary : Appearance.colors.colOnSecondaryContainer
+            color: nearFull ? Appearance.colors.colOnPrimary : Appearance.colors.colOnLayer1Inactive
             text: quickSlider.materialSymbol
 
             Behavior on color {
@@ -135,7 +135,7 @@ Rectangle {
                 rightMargin: nearIcon ? 14 : (1 - iconLocation) * quickSlider.effectiveDraggingWidth + quickSlider.rightPadding + 8
             }
             iconSize: 20
-            color: quickSlider.value >= iconLocation - 0.1 ? Appearance.colors.colOnPrimary : Appearance.colors.colOnSecondaryContainer
+            color: quickSlider.value >= iconLocation - 0.1 ? Appearance.colors.colOnPrimary : Appearance.colors.colOnLayer1Inactive
             text: secondaryMaterialSymbol
 
             Behavior on color {
